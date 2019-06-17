@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Start Template">
+	<meta name="author" content="Margarita">
+	<title>Our Team</title>
+
+	<link rel="icon" href="images/fire.png">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- SVG -->
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" id="in">
+    <image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACwUlEQVRIib2XS0tVURiGn2Nml4ldHTgMKicVWCFCpxumNbWb88DuZk0aNLCgSZMuRnjpD5iFwyCPWFkQ0TGoJiekfoAW5SSliBMfvEu2m7PX2We38YPFWmvv9b3PXnvdvpXJ5/PEsOVAG3AI2A1sAtbI7SfwFXgH5IBnwJ9ykuXAJt4NnAM2xvlC4BvwALirjyppVR6BDqAA9Aj6SeWDQD2wQqlez3rUZoPKBWnE7vEy4D5wVvVXwDXlcSwL3AT2qm0fcBH4G/QN99igw4LOA2eAfRVA3Yful++8tIalHQm2cWnX2NjvGwCKFUCdFeVrGj+keS8KfBK4AMwBh4E3CYBhM40jwC/gvBiLwDZ7e1W+ArxNAerMtC6r3OuWoQPbkqnT+AykCHX2EJgQo9uBa7RO0ewtNaad2hw6E4KL0kasGgO3ap1+9MxeA7YAVxOCzV4DH8RqdWCzEY/TIDAG3PoPcJDRVg00qjJRBjzoed+ifFLLJ8oco9F6vEWVgschp3HKhep5pZzSF2CnR+ez8s0GrlXlu8chygyyVj1FZd88cIxa3yERx+y37lJ6rPbH4zgaeFbl9QnAwTGdLNM2yJg18JQqDQnAldpWtZ+qCnxpdgnA7qh8b+BRVY4uAbhd+Wi1wDbbtgN7tMOEzf2VqByN9ZgHato7gBmLy1wEcl3hykvgQMIz2GcZ4LmCihvGc8vJAoBpvTidMtTslLRnxFo4Fi3i6FL5NtCUIrQpEH10ucgzuIE8Uli6CngKNKcAbZbWamkPuRfhneuSTpB1wLh+eyYBMCPfcWmNSHvBwmALQU8oJF0J9AMvKlzjWU2kfmn0SXNReOu7SXRobOpUt2D9iYKFgm4MKIBvEPAYsE3Pp9XLoVLica4wFqhZhBh3L7c9wcbzju8KU+mlzaIVd2mzI9DMNg53abPNyNJvrxrwD/9WquH+nWJUAAAAAElFTkSuQmCC"></image>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" id="twitter">
+    <image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAC40lEQVRIibWXy0tUURzHP2Nk1samhwtpNVG5aWOECE1FmNa2h7kPemfapqCFmxa16WFP7R8wC5dBGhYWRDQG1WZCmmULLcxNSSETP/geuV3unHtnmPnB5Z5z7znfz3n+zu+kcrkcCWwl0AXsB3YCGWCtqv0ECsB7YAJ4DvyNk4wDm3gfcAbYmKSFwHfgHnBLjYq0Oo9AD5AHBgT9rPQ+oBlYpadZ3wZUZoPSeWkk7vEK4A5wWvnXwBW9k1gWuArsVtkHwHlgKVg33GODjgq6CJwC9pQBdQ3dq7qL0hqVdkmwzcshzY0N3xBQLAPqrKi6pjEvzdulwMeAc8Bv4ADwtgJg2EzjIPALOCvGf2BbvYNKXwTeVQHqzLT6lR5029CBbcs0aX6Gqgh19giYEqPPgeu1T9HqrWRO46wobcSqN3Cn9uknz+o1T5WO+L5D3qqodwdwqYTGG+CjWJ0ObDbmafVRCWdC368Jht4TamBUI4OMLgO3KjPlAc+rdznBXAM6IsoOq3yUOUargbcqk/eAp/WkNZRfPWuh4NH5ovcWAzcq88NTIa0ex9mLmP+O0eg7JIJmgtc9Q+gsDrxsBl5QZn1M2YJn0aBGDcdoOMaCgWeUaYmpZKKXNddR1p1gRLbpPVMXEMp6KmQCKzi8peYFTTLM7qj8YOBxZQ7HVLK9fCIw3NMagc3AkwRQdEqZjVsgYC7zm8Y/Kw9TC9slzzgHbLIe/wHuCmSRQ6oG0JS0ze4b020nCwBmFW2crAH4uLTnxFo+Fi3i6FX6BtBWRWhbIProdZFn0IE8Vli6GngGtFcB2i6tNdIecT/CnuuCTpB1wKSGvZI5T6nupLTGpL1sYfCS9qSFpA3AQ+BVzB4Pm5V9qboN0uoOh7e+m0SP5qZJeQvWn2pL5HVjQAF8i4BHgO36PqtejkSJJ7nCWKBmEWKcL3dmJ5DN503fFabcS5tFK+7S5jyYuUx3aTMvaI/5htIG/AMss6yx0zUZPwAAAABJRU5ErkJggg=="></image>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" id="fb">
+    <image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACs0lEQVRIib2XzUtUURjGfzOVWRv7dOEyqNxU4BAiaEVk1tbC3Lfo28xNQQs3LmrTh31K/4BJuAwysbAgojGoNhOCf4AW5aakiIkXnldul5k758o0D1zuOfee8/zuuefrPZl8Pk+A1gBdQCewF9gGbFC178Ac8A54DjwDfleyrAQ2837gLLA15AuBL8A94JY+qqSyCQa9QAEYFPST0geBJmCtriY9G1SZLUoX5BHc4lXAHeCM8q+Aq7qHqAMYAvap7APgAvAnWjfeYoOOCboEnAb2p4D6hx5Q3SV5jcm7LNj6pVt9Y79vBCimgLqKqmse3+R5uxz4BHAe+AkcAd6sABiXeRwFfgDnxPgHbKN3WOkB4G0VoC7zuqT0sE9DB9uUaVT/jAQa5jRvi7ouJ5R9BEyL0e/gOs1TNHpD+9QGzKHAskV5I1bdauCw5unHFKM3p9XLdAWY0eqVpNfAB2CPMbMCm8YDoaaNkbRBJwPAUUaXtbhFmelAYE6Xy9NzAXBntBh4hzKFALAPqKiuKW2//HqF+p91326/ukGZrwHgJM0ElHFGQ9ImUUrWlxltj65OPZtMY2TgRaU3p/yIlcgZiwaeVaa5BuCdus9mI33TUQOwb5XvDTyhzLEagLt1n3CwjbbdQPt/hLZr1VqwuMzAv4C7ejmkEVpJPrpDR3NG3qb7xvTpZAHAvKKNU9VvLCflvSDW8rZoEUef0jeA1ipCWyPRR59HntEF5LHC0nXAU6CtCtA2ea2X96i/iK9cF7WDbAKm9NtD+jyujOpOyWtc3suKgy0E7VFIWg88BF6mnONW9oXq1surJx7eJp0ketU3jcpbsP5EwUJBJwYUwDcLeBzYpefzauVoKfOQI4wFahYhhq7ltiZYf95MOsKkPbRZtOKHNo9CLG72Q5stRnbZ2lBewF8tdp4HDbXQ4AAAAABJRU5ErkJggg=="></image>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 19" id="fire">
+    <text x="8.001" y="17" font-size="20" fill="#fc0" text-anchor="middle" font-family="Ionicons">
+      <tspan x="8.001"></tspan>
+    </text>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" id="google">
+    <image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAADIklEQVRIia2XzUtVQRjGf9fMrI3ZhwuXFyo3FWghQvaFaW2tbu6DvjNrk9DCTQvb9GGf1j9g94bLIBMLCyLyBtXmhuQfoNXNTUkhxgvPyHQ459xzzQcOZ2bOzPPMzDvve95JTUxMkAArgQ7gALATSANrNewHMAW8A54Dz4A/pShLCRt5D3AG2JhkhsBX4C5wU5MKRUUMQRdQAPok+knl/UA9sEpPvdr61GeDygVxJF7xCuA2cFr1V8AVvZOgFbgK7Fbf+8B5YN4fG1yxiWYlOgecAvaUIeomuldj58SVFXeksNmlU7ax7RsEFsoQdVjQWOMoivNWlPAx4BzwCzgIvFmCYBDGcQj4CZyVxj/CdnoHVL4EvF0GUQfjuqjygHNDJ2wuUyf7DEYQ1AKXgX7gu7bT/PZoAvFHwLg0epxwlfwUnd4om5pIHugFdqhtFMglEF4QN9KqMuF2+enHmNN7AmiSEIpUOe1AUrwGPkir3QkbhmMIavVOe235kD5p4uE0Oky4UZXxmCFuO/u9NhO55tWbEtjbaTRWAptVKcQMsK3NaGuz8k0knJZg2ltxTmOC+Kz6JhOuUeVbidnm9LTpoGXUXgxse96bWBBOo6ayhFgUinI7s+tD79ARKEfCbDyrj+tj+jVplc7GGW3loLe9owGbh8FpzJrwpCoNMQOyIu7Ve1S+nE8YQBy26D1Z4dmnNaJzm1YVdB9k8yh7hsH9Kt+b8IgqhyM6u8PS7/kznt8miVwOnXqPVErYTts2YJcijI+ici1zpS+ayJTae8tYsXFvB2YsLzPh38AdpSuWOewLidd5z32WgpS4DfdM0/2dLAGYVrZx8j8EonBc3DPSWvwtWsbRrfJ1oHkZRZu97KPbZZ5+BvJYaelq4CnQsgyiLeJaI+4h9yGYc13QH2QdMKZtTy1BMKWxY+IaFvcigsLzOkSWklYDD4CXMT4eBuv7QmOrxZUJprdxN4ku2aZOdUvWnyhZKOjGgBL4BgkeAbaqfVqrHAojT3KFsUTNMsS4WO7DYoLZ80bcFabcS5tlK+7S5qKYBRB3abNgZI/FhmgAfwHLjsOB/yyDowAAAABJRU5ErkJggg=="></image>
+  </symbol>
+</svg>
+<!-- End SVG -->
+
+
+
+<div class="container-fluid">
+
+	<div class="header">
+		<p class="header__one">the geniuses behind our work</p>
+		<p class="header__two">our team</p>
+		<div class="wrapper__icon">
+			<img src="images/fire.png"class="header__icon">
+		</div>
+	</div>
+
+	<div class="main">
+
+		<div class="main__img">
+			<img src="images/boy.jpg" alt="Man" class="img__man">
+		</div>
+		<div class="border__desc">
+		<div class="description">
+			<h1 class="description__name">Sahariar Kabir</h1>
+			<p class="description__position">Frontend Developer</p>
+			<div class="descriptions__networks">
+				<svg class="icon">
+				  <use xlink:href="#in"></use>
+				</svg>
+				<svg class="icon">
+				  <use xlink:href="#twitter"></use>
+				</svg>
+				<svg class="icon">
+				  <use xlink:href="#fb"></use>
+				</svg>
+				<svg class="icon">
+				  <use xlink:href="#google"></use>
+				</svg>
+			</div>
+		
+			<p class="description__about">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet ligula efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacus placerat. Praesent rutrum eget massa a convallis. Nam vitae augue malesuada, accumsan mauris ut, consectetur.
+			</p>
+			
+			<div class="descriptoin__items"></div>
+			<form action="" class="description__form">
+				<button type="submit" class="description__btn">
+					view profile
+				</button>
+			</form>
+		</div>
+</div>
+	</div>
+</div>
+
+<!-- LiveReload Script -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
